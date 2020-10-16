@@ -6,7 +6,7 @@ A habit I have tried to instill in myself, is whenever I try to "get back on the
 
 My last guitar push was multi-faceted, with classes at my park district (cancelled due to covid), a powerful app with a few drawbacks, and a popular online guitar-tab auto scroller.
 
-This time, I'm going to drive the training process, and want so extra things.
+This time, I'm going to drive the training process with js, and want some extra things.
 
 Starting with guitarScroller.  I'd like to couple a scroller with a dial to increase/decrease speed.  And an editor, to write pieces I won't find in the poular library sites.  This will also help if I want to transpose.
 
