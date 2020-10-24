@@ -2,6 +2,11 @@
 import { songArray } from './core.js'
 import { noteSelect } from './elements.js'
 import { durationSelect } from './elements.js' 
+
+const addBreak = () => {
+    let result = songArray.concat([{ 'note' : 'Bar', 'duration' : null }]);
+    return result;
+}
 const addNote = () => {
     let result = songArray.concat([{ 'note' : noteSelect.options[noteSelect.selectedIndex].value, 'duration' : durationSelect.options[durationSelect.selectedIndex].value }]);
     return result
@@ -16,4 +21,4 @@ const songDump = () => {
     return result;
 }
 
-export { addNote, songDump }
+export { addBreak, addNote, songDump }
