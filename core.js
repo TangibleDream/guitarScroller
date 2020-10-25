@@ -13,4 +13,5 @@ printSongButton.addEventListener("click", function(){
     musicArea.setAttribute('style', 'white-space: pre;');
     musicArea.textContent = songDump();
 })
+
 export { songArray };
