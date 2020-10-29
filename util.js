@@ -28,7 +28,7 @@ const g6Pic = (note) => {
     let notes = [{'E1':'./images/E1-6S.png'},{'F1':'./images/F1-6S.png'},{'F#1':'./images/FS1-6S.png'},{'G1':'./images/G1-6S.png'},{'G#1':'./images/GS1-6S.png'},{'A2':'./images/A2-6S.png'},{'A#2':'./images/AS2-6S.png'},{'B2':'./images/B2-6S.png'},{'C2':'./images/C2-6S.png'},{'C#2':'./images/CS2-6S.png'},{'D2':'./images/D2-6S.png'},{'D#2':'./images/DS2-6S.png'},
             {'E2':'./images/E2-6S.png'},{'F2':'./images/F2-6S.png'},{'F#2':'./images/FS2-6S.png'},{'G2':'./images/G2-6S.png'},{'G#2':'./images/GS2-6S.png'},{'A3':'./images/A3-6S.png'},{'A#3':'./images/AS3-6S.png'},{'B3':'./images/B3-6S.png'},
             {'C3':'./images/C3-6S.png'},{'C#3':'./images/CS3-6S.png'},{'D3':'./images/D3-6S.png'},{'D#3':'./images/DS3-6S.png'},{'E3':'./images/E3-6S.png'},
-            {'F3':'./images/F3-6S.png'},{'F#3':'./images/FS3-6S.png'},{'G3':'./images/G3-6S.png'},{'G#3':'./images/G#3-6S.png'}, 
+            {'F3':'./images/F3-6S.png'},{'F#3':'./images/FS3-6S.png'},{'G3':'./images/G3-6S.png'},{'G#3':'./images/GS3-6S.png'}, 
             {'A4':'./images/A4-6S.png'},{'A#4':'./images/AS4-6S.png'},{'B4':'./images/B4-6S.png'},{'C4':'./images/C4-6S.png'},{'C#4':'./images/CS4-6S.png'},
             {'D4':'./images/D4-6S.png'},{'D#4':'./images/DS4-6S.png'},{'E4':'./images/E4-6S.png'},{'F4':'./images/F4-6S.png'},{'F#4':'./images/FS4-6S.png'},
             {'G4':'./images/G4-6S.png'},{'G#4':'./images/GS4-6S.png'},{'A5':'./images/A5-6S.png'},{'A#5':'./images/AS5-6S.png'},{'B5':'./images/B5-6S.png'}]
