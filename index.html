@@ -5,12 +5,11 @@
 </head>
 <body>
     <h1>guitarScroller</h1>
-    <div id="musicArea">
+    <div>
         <table>
-            <tr><td>3/2</td><td>|</td><td>2/3</td><td>2/3</td><td>1/0</td><td>|</td><td>1/2</td><td>1/0</td><td>1/2</td><td>|</td><td>1/3</td><td>1/3</td><td>1/2</td><td>1/0</td><td>|</td><td>2/3</td></tr>
-            <tr><td>A3</td><td>|</td><td>D3</td><td>D3</td><td>E3</td><td>|</td><td>F#3</td><td>E3</td><td>F#3</td><td>|</td><td>G3</td><td>G3</td><td>F#3</td><td>E3</td><td>|</td><td>D3</td></tr>
-            <tr><td>Q</td><td>|</td><td>H</td><td>Q</td><td>Q</td><td>|</td><td>H</td><td>Q</td><td>Q</td><td>|</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>|</td><td>Q</td></tr>
+            <tr id="musicArea"></tr>
         </table>
+        <div id="GS"></div>
     </div>
     <div class="form">
         <select id="noteSelector" class="custom-select custom-select-lg mb-3" style="width: 20%">
@@ -58,17 +57,12 @@
             <option value="A5" class="value">A5</option>
             <option value="A#5" class="value">A#5</option>
             <option value="B5" class="value">B5</option>
-            <option value="C5" class="value">C5</option>
-            <option value="C#5" class="value">C#5</option>
-            <option value="D5" class="value">D5</option>
-            <option value="D#5" class="value">D#5</option>
-            <option value="E5" class="value">E5</option>
         </select>
         <select id="durationSelector" class="custom-select custom-select-lg mb-3" style="width: 20%">
             <option value="sixty-fourth" class="value">1/64</option>
             <option value="thirty-second" class="value">1/32</option>
             <option value="sixteenth" class="value">1/16</option>
-            <option value="eight" class="value">1/8</option>
+            <option value="eighth" class="value">1/8</option>
             <option value="quarter" class="value">1/4</option>
             <option value="half" class="value">1/2</option>
             <option value="whole" class="value">whole</option>
@@ -80,3 +74,6 @@
     <div id="musicArray"></div>
     <script src="./core.js" type="module"></script>
 </body>
+<!--<tr><td>3/2</td><td>|</td><td>2/3</td><td>2/3</td><td>1/0</td><td>|</td><td>1/2</td><td>1/0</td><td>1/2</td><td>|</td><td>1/3</td><td>1/3</td><td>1/2</td><td>1/0</td><td>|</td><td>2/3</td></tr>
+<tr><td>A3</td><td>|</td><td>D3</td><td>D3</td><td>E3</td><td>|</td><td>F#3</td><td>E3</td><td>F#3</td><td>|</td><td>G3</td><td>G3</td><td>F#3</td><td>E3</td><td>|</td><td>D3</td></tr>
+<tr><td>Q</td><td>|</td><td>H</td><td>Q</td><td>Q</td><td>|</td><td>H</td><td>Q</td><td>Q</td><td>|</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>|</td><td>Q</td></tr>-->
