@@ -8,7 +8,8 @@ const addBreak = () => {
     let newBreak = document.createElement('td');
     let newBreakG6 = document.createElement('img');
     newBreakG6.src = './images/break-6S.png'
-    newBreak.innerText  = '|\r\n|\r\n|';
+    newBreakG6.width = "32"
+    newBreak.innerText  = '.|.....\r\n.|.....\r\n.|.....';
     scrollerArea.appendChild(newBreak);
     g6Area.appendChild(newBreakG6);
     return result;
@@ -21,7 +22,7 @@ const addNote = () => {
     let newDuration = document.createElement("img");
     let newG6 = document.createElement("img");
     newG6.src = g6Pic(selNote);
-    //newG6.width = "30"
+    newG6.width = "32"
     newDuration.src = durationPic(selDuration);
     newDuration.width = "30"
     newNote.innerText = `${selNote}\r\n${toGuitarFraction(selNote)}\r\n`;
