@@ -15,8 +15,8 @@ printSongButton.addEventListener("click", function(){
 });
 removeNote.addEventListener("click", function() {
     let result = songArray.pop();
-    scrollerArea.removeChild(scrollerArea.lastChild);
-    g6Area.removeChild(g6Area.lastChild);
+    if (scrollerArea.firstChild) scrollerArea.removeChild(scrollerArea.lastChild);
+    if (g6Area.firstChild) g6Area.removeChild(g6Area.lastChild);
     return result
 })
 
