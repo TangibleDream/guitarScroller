@@ -5,6 +5,7 @@ const durationSelect = document.getElementById('durationSelector');
 const musicArrayArea = document.getElementById('musicArray');
 const noteSelect = document.getElementById('noteSelector');
 const printSongButton = document.getElementById('printSong');
+const removeNote = document.getElementById('removeNote');
 const scrollerArea = document.getElementById('musicArea');
 const g6Area = document.getElementById('GS');
-export { addBreakButton, addNoteButton , durationSelect, g6Area, musicArrayArea, noteSelect, printSongButton, scrollerArea };
+export { addBreakButton, addNoteButton , durationSelect, g6Area, musicArrayArea, noteSelect, printSongButton, removeNote, scrollerArea };
