@@ -1,3 +1,5 @@
+import { songArray } from "./core.js"
+
 const durationPic = (duration) => {
     let durations = {'whole':'./images/whole.png','half':'./images/half.png','quarter':'./images/quarter.png','eighth':'./images/eighth.png',
                      'sixteenth':'./images/sixteenth.png','thirty-second':'./images/thirtySecond.png','sixty-fourth':"./images/sixtyFourth.png"}                    
@@ -19,6 +21,28 @@ const g6Pic = (note) => {
     return result;
 }
 
+const max5 = (name) => {
+    let result = [];
+    let noteSet = []
+    songArray.forEach(item => { noteSet = noteSet.concat(item[name])})
+    let count = 0
+    for( let i = 0; i < noteSet.length; i++){ if ( noteSet[i] === 'Bar') { noteSet.splice(i, 1); i-- }}
+    for( let i = 0; i < noteSet.length; i++){ if ( noteSet[i] === null) { noteSet.splice(i, 1); i-- }}
+    while (count < 5 && noteSet.length > 0){
+        result[count] = mode(noteSet);
+        for( let i = 0; i < noteSet.length; i++){ if ( noteSet[i] === result[count]) { noteSet.splice(i, 1); i-- }}
+        count ++;
+    }
+    return result;
+}
+
+const mode = (arr) => {
+    return arr.sort((a,b) =>
+          arr.filter(v => v===a).length
+        - arr.filter(v => v===b).length
+    ).pop();
+}
+
 const toGuitarFraction = (note) => {
     let result = ""
     let notes = [{'E1':'6/0'},{'F1':'6/1'},{'F#1':'6/2'},{'G1':'6/3'},{'G#1':'6/4'},{'A2':'6/5'},{'A#2':'6/6'},{'B2':'6/7'},{'C2':'6/8'},{'C#2':'6/9'},{'D2':'6/10'},{'D#2':'6/11'},
@@ -38,4 +62,4 @@ const toGuitarFraction = (note) => {
     })
     return result;
 }
-export {durationPic, g6Pic, toGuitarFraction};
+export {durationPic, g6Pic, max5, toGuitarFraction};

@@ -31,6 +31,7 @@ const addNote = () => {
     g6Area.appendChild(newG6);
     return result
 }
+
 const songDump = () => {
     let result = 'export default [\r\n';
     songArray.forEach( item => {
