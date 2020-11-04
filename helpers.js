@@ -14,9 +14,13 @@ const addBreak = () => {
     g6Area.appendChild(newBreakG6);
     return result;
 }
-const addNote = () => {
+const addNote = (n=null, d=null) => {
     let selNote = noteSelect.options[noteSelect.selectedIndex].value;
     let selDuration = durationSelect.options[durationSelect.selectedIndex].value;
+    if (n != null){
+        selNote = n
+        selDuration = d    
+    }
     let result = songArray.concat([{ 'note' : selNote, 'duration' : selDuration }]);
     let newNote = document.createElement('td');
     let newDuration = document.createElement("img");
@@ -32,6 +36,27 @@ const addNote = () => {
     return result
 }
 
+const addPreset = (id) => {
+    let presetNote = document.getElementById(`psh-${id.charAt(7)}`).textContent;
+    let presetDuration = document.getElementById(`psdur-${id.charAt(9)}`).getElementsByTagName('img')[0].src;
+    presetDuration = presetDuration.substring(30).slice(0, -4);;
+    songArray = addNote(presetNote, presetDuration);
+    return songArray;
+};
+
+const presetVisibility = (nl,dl) => {
+    for(let x = 1;x < 5+1; x++){
+        for(let y = 1; y < 5+1; y++){
+            document.getElementById(`preset-${x}-${y}`).style.visibility = 'hidden';
+        } 
+    }
+    for(let x = 1;x < nl+1; x++){
+        for(let y = 1; y < dl+1; y++){
+            document.getElementById(`preset-${x}-${y}`).style.visibility = 'visible';
+        } 
+    }
+}
+
 const songDump = () => {
     let result = 'export default [\r\n';
     songArray.forEach( item => {
@@ -42,4 +67,4 @@ const songDump = () => {
     return result;
 }
 
-export { addBreak, addNote, songDump }
+export { addBreak, addNote, addPreset, presetVisibility, songDump }
