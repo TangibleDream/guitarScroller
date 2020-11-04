@@ -2,8 +2,14 @@ import { songArray } from "./core.js"
 
 const durationPic = (duration) => {
     let durations = {'whole':'./images/whole.png','half':'./images/half.png','quarter':'./images/quarter.png','eighth':'./images/eighth.png',
-                     'sixteenth':'./images/sixteenth.png','thirty-second':'./images/thirtySecond.png','sixty-fourth':"./images/sixtyFourth.png"}                    
+                     'sixteenth':'./images/sixteenth.png','thirtySecond':'./images/thirtySecond.png','sixtyFourth':"./images/sixtyFourth.png"}                    
     return durations[duration]
+}
+
+const findPreset = (e) => {
+    let element = document.elementFromPoint(e.pageX, e.pageY);
+    let pe = element.parentNode
+    return pe.id
 }
 
 const g6Pic = (note) => {
@@ -62,4 +68,4 @@ const toGuitarFraction = (note) => {
     })
     return result;
 }
-export {durationPic, g6Pic, max5, toGuitarFraction};
+export {durationPic, findPreset, g6Pic, max5, toGuitarFraction};

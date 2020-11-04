@@ -59,8 +59,8 @@
             <option value="B5" class="value">B5</option>
         </select>
         <select id="durationSelector" class="custom-select custom-select-lg mb-3" style="width: 20%">
-            <option value="sixty-fourth" class="value">1/64</option>
-            <option value="thirty-second" class="value">1/32</option>
+            <option value="sixtyFourth" class="value">1/64</option>
+            <option value="thirtySecond" class="value">1/32</option>
             <option value="sixteenth" class="value">1/16</option>
             <option value="eighth" class="value">1/8</option>
             <option value="quarter" class="value">1/4</option>
@@ -72,13 +72,13 @@
         <button id="removeNote" class="btn btn-dark">remove note/<br>measure <br> line</button>
         <button id="printSong" class="btn btn-dark">print <br> song</button>
     </div> 
-    <table>
+    <table id="presetTable">
         <tr><th></th><th id="psh-1"></th><th id="psh-2"></th><th id="psh-3"></th><th id="psh-4"></th><th id="psh-5"></th></tr>
-        <tr><td id="psdur-1" style="font-weight: bold;"></td><td id="preset-1-1"><button class="btn btn-dark"></button></td><td id="preset-2-1"><button class="btn btn-dark"></button></td><td id="preset-3-1"><button class="btn btn-dark"></button></td><td id="preset-4-1"><button class="btn btn-dark"></button></td><td id="preset-5-1"><button class="btn btn-dark"></button></td></tr>
-        <tr><td id="psdur-2" style="font-weight: bold;"></td><td id="preset-1-2"><button class="btn btn-dark"></button></td><td id="preset-2-2"><button class="btn btn-dark"></button></td><td id="preset-3-2"><button class="btn btn-dark"></button></td><td id="preset-4-2"><button class="btn btn-dark"></button></td><td id="preset-5-2"><button class="btn btn-dark"></button></td></tr>
-        <tr><td id="psdur-3" style="font-weight: bold;"></td><td id="preset-1-3"><button class="btn btn-dark"></button></td><td id="preset-2-3"><button class="btn btn-dark"></button></td><td id="preset-3-3"><button class="btn btn-dark"></button></td><td id="preset-4-3"><button class="btn btn-dark"></button></td><td id="preset-5-3"><button class="btn btn-dark"></button></td></tr>
-        <tr><td id="psdur-4" style="font-weight: bold;"></td><td id="preset-1-4"><button class="btn btn-dark"></button></td><td id="preset-2-4"><button class="btn btn-dark"></button></td><td id="preset-3-4"><button class="btn btn-dark"></button></td><td id="preset-4-4"><button class="btn btn-dark"></button></td><td id="preset-5-4"><button class="btn btn-dark"></button></td></tr>
-        <tr><td id="psdur-5" style="font-weight: bold;"></td><td id="preset-1-5"><button class="btn btn-dark"></button></td><td id="preset-2-5"><button class="btn btn-dark"></button></td><td id="preset-3-5"><button class="btn btn-dark"></button></td><td id="preset-4-5"><button class="btn btn-dark"></button></td><td id="preset-5-5"><button class="btn btn-dark"></button></td></tr>
+        <tr><td id="psdur-1" style="font-weight: bold;"></td><td id="preset-1-1" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-2-1" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-3-1" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-4-1" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-5-1" style="visibility: hidden;"><button class="btn btn-dark"></button></td></tr>
+        <tr><td id="psdur-2" style="font-weight: bold;"></td><td id="preset-1-2" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-2-2" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-3-2" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-4-2" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-5-2" style="visibility: hidden;"><button class="btn btn-dark"></button></td></tr>
+        <tr><td id="psdur-3" style="font-weight: bold;"></td><td id="preset-1-3" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-2-3" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-3-3" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-4-3" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-5-3" style="visibility: hidden;"><button class="btn btn-dark"></button></td></tr>
+        <tr><td id="psdur-4" style="font-weight: bold;"></td><td id="preset-1-4" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-2-4" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-3-4" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-4-4" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-5-4" style="visibility: hidden;"><button class="btn btn-dark"></button></td></tr>
+        <tr><td id="psdur-5" style="font-weight: bold;"></td><td id="preset-1-5" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-2-5" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-3-5" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-4-5" style="visibility: hidden;"><button class="btn btn-dark"></button></td><td id="preset-5-5" style="visibility: hidden;"><button class="btn btn-dark"></button></td></tr>
     </table>
     
     <div id="musicArray"></div>
